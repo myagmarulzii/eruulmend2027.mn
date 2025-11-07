@@ -2,6 +2,8 @@
     --primary: #0d9488;
     --primary-dark: #0b7064;
     --accent: #60a5fa;
+    --primary-dark: #0f766e;
+    --accent: #f97316;
     --background: #f8fafc;
     --text: #0f172a;
     --muted: #64748b;
@@ -122,6 +124,11 @@ a:hover {
     align-items: center;
     justify-content: center;
     box-shadow: 0 24px 48px rgba(13, 148, 136, 0.18), 0 12px 32px rgba(96, 165, 250, 0.16);
+    background: radial-gradient(circle, rgba(255,255,255,0.92), rgba(148, 163, 184, 0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(15, 118, 110, 0.15);
 }
 
 .logo-ring {
@@ -135,6 +142,11 @@ a:hover {
     -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 6px), #000 calc(100% - 6px));
     opacity: 0.85;
     margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 6px solid var(--primary);
+    opacity: 0.65;
 }
 
 .logo-heart {
@@ -146,6 +158,10 @@ a:hover {
     clip-path: path('M 35 0 A 25 25 0 0 1 70 25 C 70 47 35 70 35 70 C 35 70 0 47 0 25 A 25 25 0 0 1 35 0 Z');
     opacity: 0.9;
     box-shadow: 0 10px 24px rgba(96, 165, 250, 0.35);
+    background: var(--accent);
+    transform: rotate(-45deg);
+    clip-path: path('M 35 0 A 25 25 0 0 1 70 25 C 70 47 35 70 35 70 C 35 70 0 47 0 25 A 25 25 0 0 1 35 0 Z');
+    opacity: 0.85;
 }
 
 .logo-text {
@@ -155,6 +171,7 @@ a:hover {
     background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     -webkit-background-clip: text;
     color: transparent;
+    color: var(--primary-dark);
 }
 
 .logo-caption {
